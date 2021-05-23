@@ -1,1 +1,3 @@
+#!/usr/bin/env bash
+# Flash an esp8266 with the example
 cargo espflash --chip esp8266 --example esp8266 --features="xtensa-lx-rt/lx106 xtensa-lx/lx106 esp8266-hal" /dev/ttyUSB0

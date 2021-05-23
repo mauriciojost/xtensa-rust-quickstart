@@ -1,8 +1,7 @@
 #!/bin/bash
 
-
 # change this to the directory of where you built rustc for xtensa
-CUSTOM_RUSTC=/home/mjost/persospace/rust-xtensa
+CUSTOM_RUSTC=$(dirname $(readlink -e $0))/../rust-xtensa
 
 export RUST_BACKTRACE=1 
 export XARGO_RUST_SRC=$CUSTOM_RUSTC/library # or /src for an older compiler
